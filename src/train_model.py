@@ -1,7 +1,7 @@
 import argparse
 import pandas as pd
-import joblib
 import mlflow
+import mlflow.sklearn
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 from pathlib import Path
@@ -32,4 +32,4 @@ accuracy = accuracy_score(y_test, y_pred)
 mlflow.log_metric("accuracy", accuracy)
 
 Path(args.model_dir).mkdir(parents=True, exist_ok=True)
-joblib.dump(model, Path(args.model_dir) / "model.pkl")
+mlflow.sklearn.save_model(model, args.model_dir)

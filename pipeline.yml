@@ -1,8 +1,8 @@
 $schema: https://azuremlschemas.azureedge.net/latest/pipelineJob.schema.json
 type: pipeline
 
-display_name: ci-cd-pipeline-demo
-experiment_name: ci-cd-pipeline-demo
+display_name: ci-cd-pipeline-mlops
+experiment_name: ci-cd-pipeline-mlops
 
 settings:
   default_compute: azureml:cpu-cluster

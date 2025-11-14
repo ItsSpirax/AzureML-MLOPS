@@ -3,7 +3,7 @@ name: "Train and Register Model"
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   train:

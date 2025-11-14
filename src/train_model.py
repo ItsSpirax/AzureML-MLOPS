@@ -25,7 +25,7 @@ X_test = test_df[features]
 y_test = test_df[target]
 
 # model = LogisticRegression(max_iter=500, C=0.5, solver='liblinear')
-model = LogisticRegression(max_iter=200)
+model = LogisticRegression(max_iter=200, C=1.0, solver="lbfgs")
 model.fit(X_train, y_train)
 
 y_pred = model.predict(X_test)

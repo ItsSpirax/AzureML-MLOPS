@@ -1,6 +1,6 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandComponent.schema.json
-name: train_risk_model
-display_name: Train Risk Model
+name: train_iris_model
+display_name: Train Iris Model
 version: 1
 
 inputs:

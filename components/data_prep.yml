@@ -1,6 +1,6 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandComponent.schema.json
-name: prep_credit_data
-display_name: Prep Credit Data
+name: prep_iris_data
+display_name: Prep Iris Data
 version: 1
 
 inputs:

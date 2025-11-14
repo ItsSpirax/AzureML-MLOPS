@@ -1,6 +1,6 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandComponent.schema.json
-name: register_risk_model
-display_name: Register Risk Model
+name: register_iris_model
+display_name: Register Iris Model
 version: 1
 
 inputs:
@@ -8,7 +8,7 @@ inputs:
     type: uri_folder
   model_name:
     type: string
-    default: "credit-risk-model"
+    default: "iris-classifier"
 
 code: ../src/
 environment: azureml:AzureML-sklearn-1.0-ubuntu20.04-py38-cpu:1
